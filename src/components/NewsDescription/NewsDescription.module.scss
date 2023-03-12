@@ -1,0 +1,39 @@
+.card {
+  border: 1px solid #f7ece1;
+  width: 100%;
+  max-width: 1296px;
+  padding: 35px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 50px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 755px;
+  height: 515px;
+  align-self: center;
+}
+
+.textWrapper {
+  max-width: 850px;
+  align-self: center;
+
+  .text {
+    color: hsla(0, 0%, 20%, 1);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 140%;
+  }
+
+  .description {
+    color: hsla(0, 0%, 20%, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}

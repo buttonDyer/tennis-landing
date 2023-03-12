@@ -1,0 +1,50 @@
+@import '~/src/styles/mixins';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 106px;
+}
+
+.container {
+  @include container();
+}
+
+.logoWrapper {
+  width: 100%;
+  max-width: 153px;
+}
+
+.headerWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  .link {
+    margin-right: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+
+.iconsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  .icon {
+    margin-right: 30px;
+    color: white;
+    font-size: 28px;
+  }
+}
