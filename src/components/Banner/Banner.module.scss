@@ -7,15 +7,13 @@
   align-items: center;
   margin-top: -$headerHeightDesktop;
   padding-top: 136px;
-  min-height: 263px;
+  height: 263px;
   margin-bottom: 60px
 }
 
 .container {
   @include container();
 }
-
-
 
 .titleWrapper {
   display: flex;

@@ -1,0 +1,65 @@
+@import '~/src/styles/mixins';
+@import '~/src/styles/variables';
+
+.banner {
+  position: relative;
+  z-index: -999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -$headerHeightDesktop;
+  padding-top: 293px;
+  height: 100vh;
+  margin-bottom: 60px;
+}
+
+.container {
+  @include container();
+}
+
+.titleWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 636px;
+
+  .title {
+    font-weight: 700;
+    font-size: 48px;
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+
+.servicesWrapper {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 12px;
+  
+
+  .service {
+    width: 315px;
+    height: 151px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    background-color: hsla(246, 38%, 66%, 1);
+    color: hsla(0, 0%, 100%, 1);
+
+    .microTitle {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 140%;
+    }
+
+    .serviceName {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 140%;
+    }
+  }
+}

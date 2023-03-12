@@ -1,0 +1,35 @@
+.card {
+  border: 1px solid #f7ece1;
+  width: 100%;
+  padding: 35px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: white;
+
+  .wrapper {
+    position: relative;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    max-width: 376px;
+    height: 450px;
+    img {
+      user-select: none;
+      pointer-events: none;
+    }
+  }
+
+  p {
+    max-width: 300px;
+    position: absolute;
+    bottom: 45px;
+    transform: translateX(10%);
+    text-align: center;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 140%;
+    color: hsla(0, 0%, 100%, 1);
+  }
+}

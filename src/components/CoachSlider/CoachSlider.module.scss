@@ -1,0 +1,88 @@
+@import '~/src/styles/mixins';
+
+.coachSlider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.container {
+  @include container();
+}
+
+.topPart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .button {
+    background: hsla(246, 38%, 66%, 1);
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+}
+
+.sliderWrapper {
+  width: 100%;
+  padding: 25px 20px;
+  margin-top: 60px;
+  position: relative;
+
+  .swiper {
+    height: 100%;
+    width: 100%;
+  }
+
+  .slide {
+   height: 100%;
+
+    .textWrapper {
+      text-align: center;
+      max-width: 196px;
+      color: hsla(0, 0%, 20%, 1);
+
+      .coachName {
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 140%;
+        margin-bottom: 15px;
+      }
+
+      .coachDescription {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+  }
+
+  .imageWrapper {
+    border: 1px solid #f7ece1;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 240px;
+    margin-bottom: 25px;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

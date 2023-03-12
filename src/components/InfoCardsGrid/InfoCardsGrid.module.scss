@@ -1,0 +1,23 @@
+@import '~/src/styles/mixins';
+
+.InfoCardsGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.container {
+  @include container();
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 450px);
+  gap: 24px;
+  justify-content: center;
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
+}
